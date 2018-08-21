@@ -66,3 +66,6 @@ Temporary Items
 
 # vim temp files
 *.swp
+
+#mongo Shortcuts
+*.exe.lnk
