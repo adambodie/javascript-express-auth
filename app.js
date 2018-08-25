@@ -12,6 +12,12 @@ app.use(session( {
   saveUninitialized: false
 }));
 
+// make session ID available everywhere
+app.use(function(req, res, next){
+  res.locals.currentUser = req.session.userId;
+  next();
+})
+
 //mongodb connection
 mongoose.connect("mongodb://localhost:27017/bucket", { useNewUrlParser: true });
 const db = mongoose.connection;
