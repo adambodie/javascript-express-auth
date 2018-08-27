@@ -1,2 +1,2 @@
-# User Authentication With Express and Mongo
-Project code to support the [Treehouse](https://teamtreehouse.com) course [User Authentication With Express and Mongo](https://teamtreehouse.com/library/user-authentication-with-express-and-mongo)
+# Israel Bucket List
+This project is based off a course I took on a [Treehouse](https://teamtreehouse.com) course [User Authentication With Express and Mongo](https://teamtreehouse.com/library/user-authentication-with-express-and-mongo).  I followed the course in setting up a basic user authentication system and tieing the application with the MongoDB database to store users, hash passwords and storing sessions.  My intention for this project is to build off the basic design of the app from the course to add additional features.
