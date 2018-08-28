@@ -138,6 +138,14 @@ a:hover {
   margin-top: 30px;
 }
 
+.login {
+	padding: 10px;
+	.btn {
+		width: 100%;
+	}
+
+}
+
 /* Media Queries */
 
 @media (min-width: 0) and (max-width: 47em) {

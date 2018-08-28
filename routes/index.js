@@ -1,4 +1,5 @@
 const express = require('express');
+const passport = require('passport');
 const router = express.Router();
 const User = require('../models/user');
 const mid = require('../middleware');
@@ -28,6 +29,16 @@ router.get('/logout', function(req, res, next) {
 router.get('/login', mid.loggedOut, function(req, res, next) {
   return res.render('login', { title: 'Log In' });
 });
+
+router.get('/login/facebook',
+  passport.authenticate('facebook'));
+
+router.get('/login/facebook/callback', 
+  passport.authenticate('facebook', { failureRedirect: '/login' }),
+  function(req, res) {
+    res.redirect('/');
+  });
+
 
 
 // POST /login

@@ -69,3 +69,6 @@ Temporary Items
 
 #mongo Shortcuts
 *.exe.lnk
+
+#process.env
+process.env
