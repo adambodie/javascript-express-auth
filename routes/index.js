@@ -68,11 +68,19 @@ router.get('/register', mid.loggedOut, function(req, res, next) {
 
 // GET /register
 router.post('/register', function(req, res, next) {
+  const pattern = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
   if (req.body.email &&
     req.body.name &&
     req.body.dreamdestination &&
     req.body.password &&
     req.body.confirmPassword) {
+      // check to see if password matches pattern
+      if (!pattern.test(req.body.password)) {
+        const err = new Error('Password must have at least 1 uppercase letter, 1 lowercase letter, 1 digit and have at least 8 characters.');
+        err.status = 400;
+        return next(err);
+      }      
+
       // check to see if passwords match
       if (req.body.password !== req.body.confirmPassword) {
         const err = new Error('Passwords do not Match');

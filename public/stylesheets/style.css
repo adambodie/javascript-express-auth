@@ -120,6 +120,9 @@ a:hover {
   .login .btn {
     width: 100%; }
 
+.form-group p {
+  color: red; }
+
 /* Media Queries */
 @media (min-width: 0) and (max-width: 47em) {
   .navbar {
