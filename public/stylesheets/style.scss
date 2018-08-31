@@ -150,6 +150,18 @@ a:hover {
 	color: yellow;
 }
 
+.visit {
+	background-color:rgba(35,35,86, 0.5);
+	padding: 20px;
+	border-radius: 5px;
+	color: white;
+	margin-bottom: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	h2 {
+		text-indent: 2em;
+	}
+}
+
 /* Media Queries */
 
 @media (min-width: 0) and (max-width: 47em) {

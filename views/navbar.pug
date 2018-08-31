@@ -11,6 +11,8 @@ nav.navbar.navbar-fixed-top.navbar-dark.bg-inverse
         a.nav-item.nav-link(href='about') About
         a.nav-item.nav-link(href='contact') Contact
         a.nav-item.nav-link(href='profile') My Profile
+        if currentUser
+          a.nav-item.nav-link(href='visit') Visit
       if currentUser
         div
           img.avatar.img-circle.hidden-xs-down(src='/images/avatar.png', alt='avatar')

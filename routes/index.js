@@ -25,6 +25,11 @@ router.get('/logout', function(req, res, next) {
 });
 
 
+// GET /visit
+router.get('/visit', function(req, res, next) {
+  return res.render('visit', { title: 'Visit' });
+});
+
 // GET /login
 router.get('/login', mid.loggedOut, function(req, res, next) {
   return res.render('login', { title: 'Log In' });
