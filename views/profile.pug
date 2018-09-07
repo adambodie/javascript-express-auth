@@ -3,9 +3,18 @@ extends layout
 block content
   .main.container.clearfix
     .row
-      .col-md-8.col-md-offset-2
-        h2.display-4
+      .col-md-8.col-md-offset-2.profile
+        h2.display-4.profile-display
           img.avatar.img-circle.hidden-xs-down(src='/images/avatar.png', alt='avatar')
           | #{name}
-        h3.dream-destination Dream Destination
-        | #{dreamdestination}
+        .col-md-6
+          h4 Welcome, #{name}!  
+          p Feel free to explore the site and add the many exciting places in Israel to your itenirary.
+          img.img-fluid(src='/images/flag.jpg', alt='flag')
+        .col-md-6
+          .paragraph
+            h4.dream-destination Dream Destination
+            | #{dreamdestination}
+          .paragraph
+            h4 What other destinations await?
+            a.btn.btn-info-outline.btn-lg(href='/visit') Click here to Start

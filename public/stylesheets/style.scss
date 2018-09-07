@@ -150,6 +150,27 @@ a:hover {
 	color: yellow;
 }
 
+.profile {
+	background-color:rgba(35,35,86, 0.5);
+	padding: 20px;
+	border-radius: 5px;
+	color: white;
+	height: 80vh;
+}
+
+
+.profile-display {
+	background-color: $button-color;
+    padding: 10px;
+    margin-left: -20px;
+    margin-right: -20px;
+	margin-top: -20px;
+	margin-bottom: 50px;
+}
+
+.paragraph {
+	height: 200px;
+}
 .visit {
 	background-color:rgba(35,35,86, 0.5);
 	padding: 20px;
